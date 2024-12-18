@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v4
-      - name: Change directory
-        run: cd ts
       - name: Install dependencies
+        working-directory: ts
         run: npm ci
       - name: Run tests
+        working-directory: ts
         run: npm test
