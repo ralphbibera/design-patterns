@@ -1,10 +1,7 @@
 import { DefaultFactory, ShirtFactory, ShoeFactory } from "./factories";
 
-const defaultFactory = new DefaultFactory();
-console.log(defaultFactory.make());
+export const defaultFactory = new DefaultFactory();
 
-const gildanFactory = new ShirtFactory();
-console.log(gildanFactory.make());
+export const gildanFactory = new ShirtFactory();
 
-const nikeFactory = new ShoeFactory();
-console.log(nikeFactory.make());
+export const nikeFactory = new ShoeFactory();
